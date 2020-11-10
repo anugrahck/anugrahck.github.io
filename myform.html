@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>05211940000106-Anugrah Cahya Kautsar</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() { //Use ready() to make a function available after the document is loaded
+        $('.error').hide(); //The hide() method hides the selected elements.
+        $('.submit').click(function(event){
+        var amt=0;
+        var count=$('input:checked').length; //The length property returns the length of a string (number of characters).
+        if(count==0)
+        {
+        $('p.result').hide(); //The hide() method hides the selected elements.
+        $('.error').show(); // 
+        }
+        else
+        {
+        $('form').find(':checkbox').each(function(){ //The checked property sets or returns the checked state of a checkbox.
+        if($(this).is(':checked'))
+        {
+        amt=amt+parseInt($(this).val()); //To show total payment
+        }
+        });
+        $('.error').hide(); //The hide() method hides the selected elements.
+        $('p.result').show(); //The show() method shows the hidden, selected elements
+        $('p.result').text('Total pembayaran adalah Rp '+amt); //Will show total payment
+        }
+        event.preventDefault(); 
+        });
+        }); 
+        </script> 
+        <style>             
+            body {
+                background-color:lavender;
+            }
+            h2 {
+                font-family: Bodoni MT Black;
+                text-align: center;
+            }
+            .infobox { margin-top: 15px; }
+            .error { color:red; } 
+        </style>
+    </head>
+    <body>
+    <p></p>
+    <h2>Menu Kantin Nano</h2>
+        <div class="row">
+            <div class="col-sm-4"></div> 
+            <div class="col-sm-4">
+            <form>
+                <p style="text-align:center;">MAKANAN</p> 
+                <div class="infobox"><input type="checkbox" id="Nasi Goreng Telor Kornet" name="Nasi Goreng Telor Kornet" value=15000>Nasi Goreng Telor Kornet Rp 15.000</div>
+                <div class="infobox"><input type="checkbox" id="Chichken Cheese" name="Chichken Cheese" value=14000>Chichken Cheese Rp 14.000</div>
+                <div class="infobox"><input type="checkbox" id="Ayam Geprek" name="Ayam Geprek" value=15000>Ayam Geprek Rp 15.000</div>
+                <div class="infobox"><input type="checkbox" id="Fuyunghai" name="Fuyunghai" value=17000>Fuyungha Rp 17.000</div>
+                <div class="infobox"><input type="checkbox" id="Mie Ayam" name="Mie Ayam" value=10000>Fuyungha Rp 10.000</div>
+                <div class="infobox"><input type="checkbox" id="Mie Goreng / Rebus" name="Mie Goreng / Rebus" value=7000>Mie Goreng / Rebus Rp 7.000</div>
+                <p></p>
+                <p style="text-align:center;">MINUMAN</p>
+                <div class="infobox"><input type="checkbox" id="Es Teh Manis" name="Es Teh Manis" value=5000>Es Teh Manis Rp 5.000</div>
+                <div class="infobox"><input type="checkbox" id="Air Mineral" name="Air MIneral" value=3000>Air Mineral Rp 3.000</div>
+                <p class="error">Silahkan pesan menu! </p>
+                <p></p>
+                <p class="result"></p>
+                <input class="submit" type="submit" value="Pesan Sekarang">
+            </form>
+        </div>
+    </body>     
+</html>
