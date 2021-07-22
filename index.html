@@ -10,9 +10,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
+
     #grad1 {
       height: auto;
-      background-image: linear-gradient(#A2B29F, #BDD2B6, #F8EDE3);
+      background-color: #515E63;
+    }
+
+    p {
+      font-family: 'comic sans ms';
+      color: #161616;
+      word-spacing: 3px;
+    }
+
+    h1 {
+      color: #F1ECC3;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-family: monospace;
+      color: #FFCB74;
+      font-weight: bold;
     }
 
     nav {
@@ -49,6 +67,43 @@
 		}
 
     @media(min-width:321px) and (max-width:425px) {
+
+    }
+
+    .tengah {
+      text-align: center;
+      width: 100%;
+    }
+
+    .tutor-list {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kartu-tutor {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .kartu-tutor img {
+        width: 60%;
+        border-radius: 50%;
+    }
+
+    .kartu-tutor p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        color: black;
+    }
+
+    #example1 {
+      background: #ffffff;
+      background-clip: border-box;  
+      border-radius: 40px;
     }
 
   </style>
@@ -59,9 +114,9 @@
     <nav>
       <div class="menu">
               <ul>
-              <li><a href="Profile">Profile</a></li>
-              <li><a href="Portofolio">Portofolio</a></li>
-              <li><a href="Experience">Experience</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#portofolio">Portofolio</a></li>
+              <li><a href="#experience">Experience</a></li>
               <li><a href="Contact">Contact</a></li>
           </ul>
       </div>
@@ -72,8 +127,8 @@
       <section id="profile">
         <div class="row">
           <div class="col-sm-6">
-            <h2 style="font-family:monospace;"><b>Hi, I'm Anugrah Cahya</b></h2>
-            <h1><b>Information System Student at Institut Teknologi Sepuluh Nopember</b></h1>
+            <h2>Hi, I'm Anugrah Cahya</h2>
+            <h1>Information System Student at Institut Teknologi Sepuluh Nopember</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta aenean congue pellentesque enim,
               nunc auctor mi et odio. Eget tempor turpis tincidunt venenatis libero. Magna non vel phasellus 
               convallis. Integer urna velit est molestie mi consectetur nam suspendisse. Porttitor magna tellus 
@@ -90,8 +145,8 @@
         <div class="row" style="margin-top: 70px;">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <h1 style="text-align: center;"><b>Portofolio</b></h1>
-                <p style="text-align: center;"><a style="color: blue;"><b> Moguru </b></a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere aut facilis nobis odio fugiat iusto incidunt culpa quaerat suscipit exercitationem, ex aliquam optio, placeat blanditiis maiores. Enim, harum vel?
+                <h1 style="text-align: center;">Portofolio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere aut facilis nobis odio fugiat iusto incidunt culpa quaerat suscipit exercitationem, ex aliquam optio, placeat blanditiis maiores. Enim, harum vel?
                 </p>
             </div>
             <div class="col-sm-2"></div>
@@ -132,11 +187,45 @@
               <span class="carousel-control-next-icon"></span>
             </a>
           </div>
+        </div>
+      </section>
 
-          <div class="row" style="margin-top: 150px;">
-            <h1>Experience</h1>
+      <section id="experience">
+      <div class="row" style="margin-top: 100px;">
+        <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <h2 style="text-align: center;">Experience</h2>
+            <h1 style="text-align: center;">Tools & Skills</h1>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui reiciendis ratione quia ad necessitatibus eaque rerum, voluptate repellendus distinctio sed?</p>
+          </div>
+          <div class="col-sm-2"></div>
+          
+      <div id="example1">    
+        <div class="tengah">
+          <div class="tutor-list" style="margin-top: 30px;">
+            <div class="kartu-tutor">
+              <img src="https://cdn2.downdetector.com/static/uploads/logo/figma2.png"/>
+                <p>Figma</p>
+            </div>
+            <div class="kartu-tutor">
+              <img src="https://kelasprogrammer.com/wp-content/uploads/2020/05/html-5-icon.png"/>
+              <p>HTML</p>
+            </div>
+            <div class="kartu-tutor">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"/>
+              <p>CSS</p>
+            </div>
+              <div class="kartu-tutor">
+                <img src="new/png-clipart-microsoft-sql-server-microsoft-azure-sql-database-microsoft-text-logo-thumbnail-removebg-preview.png"/>
+                <p>SQL</p>
+              </div>
           </div>
         </div>
+      </div>
+      </section>
+
+      <section id="contact">
+        <div class="row" style="margin-top: 50px;"></div>
       </section>
       
     </div>
