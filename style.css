@@ -8,7 +8,7 @@ html {
 }
 
 p {
-    font-family: 'comic sans ms';
+    font-family: 'Comfortaa', cursive;
     color: #273036;
     word-spacing: 3px;
   }
@@ -36,6 +36,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
+    font-family: 'Comfortaa', cursive;;
     font-weight: bold;
     text-align: center;
     padding: 0px 40px 0px 40px;
@@ -99,7 +100,7 @@ nav ul li a {
   }
 
 h3 {
-    font-family: 'comic sans ms';
+    font-family: 'Comfortaa', cursive;
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
@@ -109,6 +110,7 @@ h3 {
   }
 
 #copyright {
+    font-family: 'Comfortaa', cursive;;
     text-align: center;
     width: 100%;
     padding: 50px 0px 50px 0px;
@@ -120,7 +122,21 @@ section {
   }
 
 .form-group {
-    font-family: 'comic sans ms';
+    font-family: 'Comfortaa', cursive;
     color: #273036;
     word-spacing: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
