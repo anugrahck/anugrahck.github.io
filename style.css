@@ -1,0 +1,126 @@
+.jumbotron {
+    padding: 2rem 0rem 0rem 0rem;
+    background-color: #F3F4F5;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'comic sans ms';
+    color: #273036;
+    word-spacing: 3px;
+  }
+
+nav {
+    justify-content: center;
+    width: 100%;
+    margin:auto;
+    padding: 15px;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    background-color:#87A7B3;
+    z-index: 1;
+  }
+
+nav ul {
+    list-style-type: none;
+  }
+
+nav ul li {
+    float: left;
+  }
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    text-decoration: none;
+  }
+
+#portofolio {
+    background-color: #F3F4F5;
+  }
+
+.card {
+    border-radius: 20px;
+  }
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+  }
+
+.kartu-tutor img {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+.kartu-tutor p {
+    margin-top: 10px;
+    font-weight: 50px;
+    text-align: center;
+    color: 273036;
+  }
+
+#contact{
+    background-color: #F3F4F5;
+  }
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #273036;
+    width: 100%;
+    line-height: 50px;
+  }
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+  }
+
+section {
+    padding-top: 5rem;
+  }
+
+.form-group {
+    font-family: 'comic sans ms';
+    color: #273036;
+    word-spacing: 3px;
+}
