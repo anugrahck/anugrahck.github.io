@@ -49,6 +49,8 @@ nav ul li a {
 
 .card {
     border-radius: 20px;
+    box-shadow:  5px 5px 10px #cccccc,
+             -5px -5px 10px #ffffff;
   }
 
 .carousel-inner img {
@@ -138,5 +140,6 @@ section {
     display: flex;
     flex-direction: column;
   }
+  
   
 }
